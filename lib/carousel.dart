@@ -7,17 +7,22 @@ class Carousel extends StatefulWidget {
 }
 
 class _CarouselState extends State<Carousel> {
-  
+
   List<Map<String, dynamic>> movies = [
     {
-      "name": "Endgame",
-      "image": "assets/Endgame.jpg",
+      "name"  : "Endgame",
+      "image" : "assets/Endgame.jpg",
       "description": "In Cinemas nearby"
     },
     {
-      "name": "Infinity War",
-      "image": "assets/infinityWar.png",
+      "name"  : "Infinity War",
+      "image" : "assets/infinityWar.png",
       "description": "Watch Now"
+    },
+    {
+      "name"  : "Age Of Ultron",
+      "image" : "assets/ageOfUltron.jpg",
+      "description" : "Watch Now"
     }
   ];
 
