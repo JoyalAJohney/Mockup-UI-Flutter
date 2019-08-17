@@ -40,9 +40,9 @@ class _MoviesState extends State<Movies> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              MovieCard("assets/Endgame.jpg","EndGame","9.1"),
-              MovieCard("assets/Endgame.jpg","EndGame","9.1"),
-              MovieCard("assets/Endgame.jpg","EndGame","9.1"),
+              MovieCard("assets/civilWar.jpg","Civil War","9.1"),
+              MovieCard("assets/strange.jpg","Doctor Strange","9.1"),
+              MovieCard("assets/winter.jpg","Winter Soldier","9.1"),
             ],
           ),
           SizedBox(height: 10.0),

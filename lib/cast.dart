@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class Cast extends StatefulWidget {
   @override
@@ -8,15 +7,15 @@ class Cast extends StatefulWidget {
 
 class _CastState extends State<Cast> {
   List<Map<String, dynamic>> casts = [
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
-    {"name": "Robert Downey Jr.", "image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/evans2.jpg"},
+    {"image": "assets/cast/thor.jpg"},
+    {"image": "assets/cast/scarlet.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
+    {"image": "assets/cast/rdj.jpg"},
   ];
 
   @override

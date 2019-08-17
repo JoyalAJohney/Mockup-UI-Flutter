@@ -47,6 +47,13 @@ flutter:
    - assets/infinityWar.png
    - assets/ageOfUltron.jpg
    - assets/cast/rdj.jpg
+   - assets/cast/evans2.jpg
+   - assets/cast/thor.jpg
+   - assets/cast/scarlet.jpg
+   - assets/ragnarok.jpg
+   - assets/civilWar.jpg
+   - assets/winter.jpg
+   - assets/strange.jpg
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
