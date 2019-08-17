@@ -35,7 +35,7 @@ class _CastState extends State<Cast> {
               color: Colors.white
             )
           ),
-          SizedBox(height: 7.0),
+          SizedBox(height: 10.0),
           Container(
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -54,12 +54,6 @@ class _CastState extends State<Cast> {
                               radius: 40,
                               backgroundImage: AssetImage(cast["image"]),
                             ),
-                            // Text(
-                            //   cast["name"],
-                            //   style: TextStyle(
-                            //     color: Colors.white, fontSize: 15.0
-                            //   ),
-                            // )
                           ],
                         ),
                       );

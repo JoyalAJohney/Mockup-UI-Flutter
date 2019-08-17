@@ -16,6 +16,36 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        centerTitle: true,
+        actions: <Widget>[
+          Icon(Icons.notifications,color: Colors.white)
+        ],
+        title: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                "Marvel",
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20.0
+                ),
+              ),
+              Text(
+                " Movies",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20.0
+                ),
+              ),
+            ],
+          ),
+        )
+      ),
       // Body
       body: Center(
           child: ListView(
