@@ -31,7 +31,7 @@ class _CastState extends State<Cast> {
             "Avengers Cast",
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize: 19.0,
+              fontSize: 17.0,
               color: Colors.white
             )
           ),
