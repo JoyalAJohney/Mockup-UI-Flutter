@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mockup_ui/splashScreen.dart';
 
 import 'homePage.dart';
 
@@ -10,7 +11,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Marvel",
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: SplashScreen(),
+      theme: ThemeData(
+        primaryColor: Colors.redAccent
+      ),
     );
   }
 }
