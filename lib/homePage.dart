@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'carousel.dart';
+import 'cast.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,33 +18,33 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: Colors.black,
       // Body
       body: Center(
-        child: Column(
-          children: <Widget>[
-            SizedBox(height: 50.0),
-            Carousel()
-          ],
-        ),
-      ),
+          child: ListView(
+        children: <Widget>[
+          SizedBox(height: 5.0),
+          Carousel(),
+          SizedBox(height: 5.0),
+          Cast()
+        ],
+      )),
       // Bottom navigation bar
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        unselectedItemColor: Colors.white,
         currentIndex: _currIndex,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.black,
+        selectedItemColor: Colors.red,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.subscriptions),
-            title: Text("")
-          ),
+              icon: Icon(Icons.subscriptions), title: Text("")),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite), title: Text("")),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            title: Text("")
-          ),
+              icon: Icon(Icons.account_circle), title: Text(""))
         ],
-        onTap: (index){
+        onTap: (index) {
           setState(() {
             _currIndex = index;
           });
