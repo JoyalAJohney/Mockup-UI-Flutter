@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mockup_ui/detailsPage.dart';
 import 'package:mockup_ui/splashScreen.dart';
 
 void main() => runApp(MyApp());
