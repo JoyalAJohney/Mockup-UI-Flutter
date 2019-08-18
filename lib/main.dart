@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mockup_ui/detailsPage.dart';
 import 'package:mockup_ui/splashScreen.dart';
-
-import 'homePage.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Marvel",
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: DetailsPage(),
       theme: ThemeData(
         primaryColor: Colors.redAccent
       ),
