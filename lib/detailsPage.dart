@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:mockup_ui/cast.dart';
 
 class DetailsPage extends StatelessWidget {
+
+  final Map<String,dynamic> movieDetails;
+  DetailsPage(this.movieDetails);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +21,7 @@ class DetailsPage extends StatelessWidget {
                   child: Container(
                     color: Colors.greenAccent,
                     child: Image(
-                      image: AssetImage("assets/infinityWar.png"),
+                      image: AssetImage(movieDetails["image"]),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -26,18 +30,20 @@ class DetailsPage extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Container(
+                    padding: EdgeInsets.all(10.0),
                     color: Colors.black,
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
                         // Movie Name
                         Container(
-                          padding: EdgeInsets.only(right: 20.0,left: 10.0,top: 10.0,bottom: 10.0),
+                          // color: Colors.blueAccent,
+                          padding: EdgeInsets.only(left: 10.0,top: 5.0,bottom: 10.0),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: <Widget>[
                               Text(
-                                "Avengers:Infinity War",
+                                "Avengers:${movieDetails["name"]}",
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
@@ -46,7 +52,7 @@ class DetailsPage extends StatelessWidget {
                               ),
                               // Movie Rating
                               Container(
-                                padding: EdgeInsets.only(right: 70.0),
+                                // padding: EdgeInsets.only(right: 70.0),
                                 child: IconTheme(
                                   data: IconThemeData(
                                     color: Colors.amber,
@@ -102,7 +108,7 @@ class DetailsPage extends StatelessWidget {
               width: 120.0,
               color: Colors.blueAccent,
               child: Image(
-                image: AssetImage("assets/movie.jpg"),
+                image: AssetImage(movieDetails["image"]),
                 fit: BoxFit.cover,
               ),
             ),

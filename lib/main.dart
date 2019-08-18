@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Marvel",
       debugShowCheckedModeBanner: false,
-      home: DetailsPage(),
+      home: SplashScreen(),
       theme: ThemeData(
         primaryColor: Colors.redAccent
       ),
